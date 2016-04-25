@@ -1,8 +1,8 @@
 # leafletplugins
 A collections of plugins for R package leaflet
 
-* Show current GPS location with link:https://github.com/stefanocudini/leaflet-gps[leaflet-gps]plugin.
-* Add tile and satellite layers from link:http://ditu.amap.com/[Gaode (Chinese)] into leaflet map.
+* Show current GPS location with [leaflet-gps](https://github.com/stefanocudini/leaflet-gps) plugin.
+* Add tile and satellite layers from [Gaode (Chinese)](http://ditu.amap.com/) into leaflet map.
 
 # Installation
 
