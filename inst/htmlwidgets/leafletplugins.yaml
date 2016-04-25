@@ -1,0 +1,5 @@
+dependencies:
+  - name: plugins
+    version: 0.0.1
+    src: "htmlwidgets/plugins/leaflet-gaode"
+    script: leaflet-gaode.js

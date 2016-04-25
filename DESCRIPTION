@@ -1,0 +1,11 @@
+Package: leafletplugins
+Type: Package
+Title: A collections of leaflet plugins
+Version: 1.0.1.0001
+Date: 2016-02-25
+Maintainer: Bangyou Zheng <zheng.bangyou@gmail.com>
+Description: A collections of leaflet plugins
+License: GPL-3 | file LICENSE
+URL: http://github.com/byzheng/leaflet/
+BugReports: https://github.com/rstudio/byzheng/issues
+RoxygenNote: 5.0.1
