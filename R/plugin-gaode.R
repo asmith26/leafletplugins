@@ -28,7 +28,8 @@ leafletGaodeDependencies <- function() {
 #'
 #' @examples
 #' leaflet() %>%
-#'   addTileGaodeMap()
+#'   addTileGaodeMap() %>%
+#'   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
 #' @export
 addTileGaodeMap <- function(
   map,
@@ -55,7 +56,8 @@ addTileGaodeMap <- function(
 #'
 #' @examples
 #' leaflet() %>%
-#'   addTileGaodeSatellite()
+#'   addTileGaodeSatellite() %>%
+#'   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
 #' @export
 addTileGaodeSatellite <- function(
     map,
