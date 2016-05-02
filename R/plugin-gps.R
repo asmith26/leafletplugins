@@ -3,7 +3,7 @@ leafletGPSDependencies <- function() {
     htmltools::htmlDependency(
       "leaflet-gps",
       "0.1.0",
-      system.file("htmlwidgets/plugins/leaflet-gps", package = "leaflet"),
+      system.file("htmlwidgets/plugins/leaflet-gps", package = "leafletplugins"),
       script = c('leaflet-gps.min.js', 'leaflet-gps-binding.js'),
       stylesheet = c('leaflet-gps.min.css')
     )
