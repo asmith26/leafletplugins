@@ -2,5 +2,7 @@
 
 export(addControlFullScreen)
 export(addControlGPS)
+export(addSearchMarker)
+export(addSearchOSM)
 export(addTileGaodeMap)
 export(addTileGaodeSatellite)

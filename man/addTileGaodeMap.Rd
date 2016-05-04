@@ -24,6 +24,7 @@ Add a Gaode tile layer
 }
 \examples{
 leaflet() \%>\%
-  addTileGaodeMap()
+  addTileGaodeMap() \%>\%
+  setView(lat = 37.550339, lng = 104.114129, zoom = 4)
 }
 

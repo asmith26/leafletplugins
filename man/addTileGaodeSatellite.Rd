@@ -24,6 +24,7 @@ Add a Gaode satellite layer
 }
 \examples{
 leaflet() \%>\%
-  addTileGaodeSatellite()
+  addTileGaodeSatellite() \%>\%
+  setView(lat = 37.550339, lng = 104.114129, zoom = 4)
 }
 

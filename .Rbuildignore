@@ -6,3 +6,4 @@
 \.bower\.json$
 \.bowerrc$
 ^docs/
+\.git$
