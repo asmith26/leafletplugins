@@ -19,6 +19,8 @@ devtools::install_github('byzheng/leafletplugins')
 
 ## Search toolbar
 
+Search for marker by lable or popup
+
 ```r
 data(quakes)
 
@@ -34,6 +36,14 @@ map %>%
 map %>% 
    addSearchMarker('marker', position = 'topleft', propertyName = 'label')
 
+```
+
+Search with open street map api
+
+```r
+leaflet(data = quakes) %>%
+    addTiles() %>%
+    addSearchOSM()
 ```
 
 ## Full screen control
