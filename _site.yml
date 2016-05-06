@@ -13,7 +13,7 @@ navbar:
 output:
   html_document:
     self_contained: false
-    theme: cosmo
+    theme: flatly
     highlight: textmate
     mathjax: null
     lib_dir: libs
