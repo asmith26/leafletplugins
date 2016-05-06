@@ -19,6 +19,8 @@ devtools::install_github('byzheng/leafletplugins')
 
 ## Search toolbar
 
+See examples from here: https://byzheng.github.io/leafletplugins/
+
 Search for marker by lable or popup
 
 ```r
