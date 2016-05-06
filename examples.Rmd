@@ -36,3 +36,39 @@ map %>%
 
 ```
 
+
+
+Search with open street map api
+
+```{r}
+leaflet(data = quakes) %>%
+    addTiles() %>%
+    addSearchOSM()
+```
+
+
+## Full screen control
+
+```{r}
+leaflet() %>%
+    addTiles() %>%
+    addControlFullScreen()
+```
+
+
+## Current GPS location
+
+```{r}
+leaflet() %>%
+   addTiles() %>%
+   addControlGPS()
+```
+
+## Gaode map (in Chinese)
+
+The zoom level has to be less than 3 in Gaode map.
+```{r}
+leaflet() %>%
+   addTileGaodeMap() %>%
+   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
+```

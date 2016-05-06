@@ -30,6 +30,14 @@
 <link href="site_libs/leaflet-search-1.9.7/leaflet-search.min.css" rel="stylesheet" />
 <script src="site_libs/leaflet-search-1.9.7/leaflet-search.min.js"></script>
 <script src="site_libs/leaflet-search-1.9.7/leaflet-search.js"></script>
+<link href="site_libs/leaflet-fullscreen-0.0.1/Control.FullScreen.css" rel="stylesheet" />
+<script src="site_libs/leaflet-fullscreen-0.0.1/Control.FullScreen.js"></script>
+<script src="site_libs/leaflet-fullscreen-0.0.1/leaflet-fullscreen.js"></script>
+<link href="site_libs/leaflet-gps-0.1.0/leaflet-gps.min.css" rel="stylesheet" />
+<script src="site_libs/leaflet-gps-0.1.0/leaflet-gps.min.js"></script>
+<script src="site_libs/leaflet-gps-0.1.0/leaflet-gps-binding.js"></script>
+<script src="site_libs/leaflet-providers-1.0.27/leaflet-providers.js"></script>
+<script src="site_libs/leaflet-gaode-1.0.1.9003/leaflet-gaode.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -232,13 +240,44 @@ map &lt;- leaflet(data = quakes[1:20,]) %&gt;%
 # Search by popup
 map %&gt;% 
    addSearchMarker(&#39;marker&#39;, position = &#39;topleft&#39;, propertyName = &#39;popup&#39;)</code></pre>
-<div id="htmlwidget-1497" style="width:528px;height:216px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1497">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addMarkers","args":[[-20.42,-20.62,-26,-17.97,-20.42,-19.68,-11.7,-28.11,-28.74,-17.47,-21.44,-12.26,-18.54,-21,-20.7,-15.94,-13.64,-17.83,-23.5,-22.63],[181.62,181.03,184.1,181.66,181.96,184.31,166.1,181.93,181.74,179.59,180.69,167,182.11,181.66,169.92,184.95,165.96,181.5,179.78,180.31],null,null,"marker",{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null,null,["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null]},{"method":"addSearchMarker","args":["marker","topleft","popup",false]}],"limits":{"lat":[-28.74,-11.7],"lng":[165.96,184.95]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5778" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5778">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addMarkers","args":[[-20.42,-20.62,-26,-17.97,-20.42,-19.68,-11.7,-28.11,-28.74,-17.47,-21.44,-12.26,-18.54,-21,-20.7,-15.94,-13.64,-17.83,-23.5,-22.63],[181.62,181.03,184.1,181.66,181.96,184.31,166.1,181.93,181.74,179.59,180.69,167,182.11,181.66,169.92,184.95,165.96,181.5,179.78,180.31],null,null,"marker",{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null,null,["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null]},{"method":"addSearchMarker","args":["marker","topleft","popup",false]}],"limits":{"lat":[-28.74,-11.7],"lng":[165.96,184.95]}},"evals":[],"jsHooks":[]}</script>
 <pre class="r"><code># Search by label
 map %&gt;% 
    addSearchMarker(&#39;marker&#39;, position = &#39;topleft&#39;, propertyName = &#39;label&#39;)</code></pre>
-<div id="htmlwidget-688" style="width:528px;height:216px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-688">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addMarkers","args":[[-20.42,-20.62,-26,-17.97,-20.42,-19.68,-11.7,-28.11,-28.74,-17.47,-21.44,-12.26,-18.54,-21,-20.7,-15.94,-13.64,-17.83,-23.5,-22.63],[181.62,181.03,184.1,181.66,181.96,184.31,166.1,181.93,181.74,179.59,180.69,167,182.11,181.66,169.92,184.95,165.96,181.5,179.78,180.31],null,null,"marker",{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null,null,["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null]},{"method":"addSearchMarker","args":["marker","topleft","label",false]}],"limits":{"lat":[-28.74,-11.7],"lng":[165.96,184.95]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3243" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3243">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addMarkers","args":[[-20.42,-20.62,-26,-17.97,-20.42,-19.68,-11.7,-28.11,-28.74,-17.47,-21.44,-12.26,-18.54,-21,-20.7,-15.94,-13.64,-17.83,-23.5,-22.63],[181.62,181.03,184.1,181.66,181.96,184.31,166.1,181.93,181.74,179.59,180.69,167,182.11,181.66,169.92,184.95,165.96,181.5,179.78,180.31],null,null,"marker",{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null,null,["4.8","4.2","5.4","4.1","4","4","4.8","4.4","4.7","4.3","4.4","4.6","4.4","4.4","6.1","4.3","6","4.5","4.4","4.4"],null]},{"method":"addSearchMarker","args":["marker","topleft","label",false]}],"limits":{"lat":[-28.74,-11.7],"lng":[165.96,184.95]}},"evals":[],"jsHooks":[]}</script>
+<p>Search with open street map api</p>
+<pre class="r"><code>leaflet(data = quakes) %&gt;%
+    addTiles() %&gt;%
+    addSearchOSM()</code></pre>
+<div id="htmlwidget-4562" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4562">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addSearchOSM","args":{"position":"topright"}}]},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="full-screen-control" class="section level2">
+<h2>Full screen control</h2>
+<pre class="r"><code>leaflet() %&gt;%
+    addTiles() %&gt;%
+    addControlFullScreen()</code></pre>
+<div id="htmlwidget-5047" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5047">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addControlFullScreen","args":[]}]},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="current-gps-location" class="section level2">
+<h2>Current GPS location</h2>
+<pre class="r"><code>leaflet() %&gt;%
+   addTiles() %&gt;%
+   addControlGPS()</code></pre>
+<div id="htmlwidget-9328" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9328">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addControlGPS","args":[]}]},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="gaode-map-in-chinese" class="section level2">
+<h2>Gaode map (in Chinese)</h2>
+<p>The zoom level has to be less than 3 in Gaode map.</p>
+<pre class="r"><code>leaflet() %&gt;%
+   addTileGaodeMap() %&gt;%
+   setView(lat = 37.550339, lng = 104.114129, zoom = 4)</code></pre>
+<div id="htmlwidget-7013" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7013">{"x":{"calls":[{"method":"addTileGaodeMap","args":[null,null]}],"setView":[[37.550339,104.114129],4,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
