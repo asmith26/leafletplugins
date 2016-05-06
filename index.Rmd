@@ -6,6 +6,10 @@ output:
     toc_float: false
 ---
 
+This package include several plugins for R package [leaflet](https://github.com/rstudio/leaflet)
+
+
+
 <div id="main-banner" class="row">
 
 <div class="col-sm-8">
