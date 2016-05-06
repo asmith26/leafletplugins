@@ -1,3 +1,22 @@
+  body {
+    padding-top: 20px;
+  }
+  .navbar-brand {
+    font-weight: bold;
+  }
+  footer {
+    border-top: 1px solid #CCC;
+    margin-top: 60px;
+    margin-bottom: 48px;
+    opacity: 0.75;
+  }
+  .content-body>:first-child, .content-body>:first-child>:first-child {
+    margin-top: 0 !important;
+  }
+  p code {
+    white-space: inherit;
+  }
+
 .mainbody>p:first-child {
   display: none;
 }
@@ -64,7 +83,8 @@ footer {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
+    max-width: 700px;
+	width: 100%;
   }
 
   .main-container h1.main-headline {
