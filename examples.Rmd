@@ -1,0 +1,38 @@
+---
+title: "leafletplugins Examples"
+output:
+  html_document:
+    toc_float: false
+---
+
+
+
+## Search toolbar
+
+Search for marker by lable or popup
+
+```{r search_toolbar}
+
+library(leafletplugins)
+
+data(quakes)
+
+map <- leaflet(data = quakes[1:20,]) %>%
+	addTiles() %>%
+	addMarkers(~long, ~lat, popup = ~as.character(mag),
+			group = 'marker', label = ~as.character(mag))
+			
+# Search by popup
+map %>% 
+   addSearchMarker('marker', position = 'topleft', propertyName = 'popup')
+
+```
+
+
+```{r search_label}
+# Search by label
+map %>% 
+   addSearchMarker('marker', position = 'topleft', propertyName = 'label')
+
+```
+

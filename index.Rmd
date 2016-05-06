@@ -1,0 +1,29 @@
+---
+title: "leafletplugins: A collections of leaflet plugins"
+output:
+  html_document:
+    toc: false
+    toc_float: false
+---
+
+<div id="main-banner" class="row">
+
+<div class="col-sm-8">
+
+* [Search toolbar](https://github.com/stefanocudini/leaflet-search)
+* [full screen control](https://github.com/brunob/leaflet.fullscreen)
+* Current GPS location with [leaflet-gps](https://github.com/stefanocudini/leaflet-gps) plugin
+* Tile and satellite layers from [Gaode (Chinese)](http://ditu.amap.com/)
+
+</div>
+
+</div>
+
+## Installation
+
+You can install the development version from Github:
+
+```{r install, eval=FALSE}
+if (!require('devtools')) install.packages('devtools')
+devtools::install_github('byzheng/leafletplugins')
+```
