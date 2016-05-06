@@ -108,7 +108,7 @@ footer {
   }
   .leaflet[style] {
 	width: 100% !important;
-	height: 300px;
+	height: 350px !important;
   }
 
 }
