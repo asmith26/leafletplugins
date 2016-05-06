@@ -1,5 +1,5 @@
 # leafletplugins
-A collections of plugins for R package leaflet
+A collections of plugins for R package [leaflet](https://github.com/rstudio/leaflet)
 
 * [Search toolbar](https://github.com/stefanocudini/leaflet-search)
 * [full screen control](https://github.com/brunob/leaflet.fullscreen)
