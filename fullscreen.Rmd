@@ -1,0 +1,18 @@
+---
+title: "Full screen control"
+output:
+  html_document:
+    toc_float: false
+---
+
+
+## Full screen control
+
+```{r}
+library(leafletplugins)
+
+leaflet() %>%
+    addTiles() %>%
+    addControlFullScreen()
+```
+

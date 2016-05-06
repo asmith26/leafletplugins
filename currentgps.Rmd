@@ -1,0 +1,17 @@
+---
+title: "Current GPS location"
+output:
+  html_document:
+    toc_float: false
+---
+
+
+## Current GPS location
+
+```{r}
+library(leafletplugins)
+
+leaflet() %>%
+   addTiles() %>%
+   addControlGPS()
+```

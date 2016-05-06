@@ -1,0 +1,27 @@
+---
+title: "Gaode map"
+output:
+  html_document:
+    toc_float: false
+---
+
+
+## Gaode map (in Chinese)
+
+The zoom level has to be less than 3 in Gaode map.
+
+
+```{r}
+library(leafletplugins)
+
+leaflet() %>%
+   addTileGaodeMap() %>%
+   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
+```
+
+
+```{r}
+leaflet() %>%
+   addTileGaodeSatellite() %>%
+   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
+```

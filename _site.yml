@@ -6,7 +6,15 @@ navbar:
     - text: "Home"
       href: index.html
     - text: Examples
-      href: examples.html
+      menu:
+        - text: "Search"
+          href: search.html
+        - text: "Full screen"
+          href: fullscreen.html
+        - text: "Current GPS"
+          href: currentgps.html
+        - text: "Gaode Map"
+          href: gaode.html
   right:
     - icon: fa-github fa-lg
       href: https://github.com/byzheng/leafletplugins

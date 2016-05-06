@@ -11,7 +11,7 @@
 
 
 
-<title>leafletplugins: A collections of leaflet plugins</title>
+<title>Gaode map</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,16 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/htmlwidgets-0.6/htmlwidgets.js"></script>
+<link href="site_libs/leaflet-0.7.3/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-0.7.3/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<link href="site_libs/leaflet-label-0.2.2/leaflet.label.css" rel="stylesheet" />
+<script src="site_libs/leaflet-label-0.2.2/leaflet.label.js"></script>
+<script src="site_libs/leaflet-path-drag-0.1.10/L.Path.Drag.js"></script>
+<script src="site_libs/leaflet-binding-1.0.1.9003/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-1.0.27/leaflet-providers.js"></script>
+<script src="site_libs/leaflet-gaode-1.0.1.9003/leaflet-gaode.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -219,26 +229,26 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">leafletplugins: A collections of leaflet plugins</h1>
+<h1 class="title toc-ignore">Gaode map</h1>
 
 </div>
 
 
-<div id="main-banner" class="row">
-<div class="col-sm-8">
-<ul>
-<li><a href="https://github.com/stefanocudini/leaflet-search">Search toolbar</a></li>
-<li><a href="https://github.com/brunob/leaflet.fullscreen">full screen control</a></li>
-<li>Current GPS location with <a href="https://github.com/stefanocudini/leaflet-gps">leaflet-gps</a> plugin</li>
-<li>Tile and satellite layers from <a href="http://ditu.amap.com/">Gaode (Chinese)</a></li>
-</ul>
-</div>
-</div>
-<div id="installation" class="section level2">
-<h2>Installation</h2>
-<p>You can install the development version from Github:</p>
-<pre class="r"><code>if (!require(&#39;devtools&#39;)) install.packages(&#39;devtools&#39;)
-devtools::install_github(&#39;byzheng/leafletplugins&#39;)</code></pre>
+<div id="gaode-map-in-chinese" class="section level2">
+<h2>Gaode map (in Chinese)</h2>
+<p>The zoom level has to be less than 3 in Gaode map.</p>
+<pre class="r"><code>library(leafletplugins)
+
+leaflet() %&gt;%
+   addTileGaodeMap() %&gt;%
+   setView(lat = 37.550339, lng = 104.114129, zoom = 4)</code></pre>
+<div id="htmlwidget-6604" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6604">{"x":{"calls":[{"method":"addTileGaodeMap","args":[null,null]}],"setView":[[37.550339,104.114129],4,[]]},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>leaflet() %&gt;%
+   addTileGaodeSatellite() %&gt;%
+   setView(lat = 37.550339, lng = 104.114129, zoom = 4)</code></pre>
+<div id="htmlwidget-3472" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3472">{"x":{"calls":[{"method":"addTileGaodeSatellite","args":[null,null]}],"setView":[[37.550339,104.114129],4,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 
 

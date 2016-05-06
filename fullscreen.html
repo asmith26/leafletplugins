@@ -11,7 +11,7 @@
 
 
 
-<title>leafletplugins: A collections of leaflet plugins</title>
+<title>Full screen control</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,17 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/htmlwidgets-0.6/htmlwidgets.js"></script>
+<link href="site_libs/leaflet-0.7.3/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-0.7.3/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<link href="site_libs/leaflet-label-0.2.2/leaflet.label.css" rel="stylesheet" />
+<script src="site_libs/leaflet-label-0.2.2/leaflet.label.js"></script>
+<script src="site_libs/leaflet-path-drag-0.1.10/L.Path.Drag.js"></script>
+<script src="site_libs/leaflet-binding-1.0.1.9003/leaflet.js"></script>
+<link href="site_libs/leaflet-fullscreen-0.0.1/Control.FullScreen.css" rel="stylesheet" />
+<script src="site_libs/leaflet-fullscreen-0.0.1/Control.FullScreen.js"></script>
+<script src="site_libs/leaflet-fullscreen-0.0.1/leaflet-fullscreen.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -219,26 +230,20 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">leafletplugins: A collections of leaflet plugins</h1>
+<h1 class="title toc-ignore">Full screen control</h1>
 
 </div>
 
 
-<div id="main-banner" class="row">
-<div class="col-sm-8">
-<ul>
-<li><a href="https://github.com/stefanocudini/leaflet-search">Search toolbar</a></li>
-<li><a href="https://github.com/brunob/leaflet.fullscreen">full screen control</a></li>
-<li>Current GPS location with <a href="https://github.com/stefanocudini/leaflet-gps">leaflet-gps</a> plugin</li>
-<li>Tile and satellite layers from <a href="http://ditu.amap.com/">Gaode (Chinese)</a></li>
-</ul>
-</div>
-</div>
-<div id="installation" class="section level2">
-<h2>Installation</h2>
-<p>You can install the development version from Github:</p>
-<pre class="r"><code>if (!require(&#39;devtools&#39;)) install.packages(&#39;devtools&#39;)
-devtools::install_github(&#39;byzheng/leafletplugins&#39;)</code></pre>
+<div id="full-screen-control" class="section level2">
+<h2>Full screen control</h2>
+<pre class="r"><code>library(leafletplugins)
+
+leaflet() %&gt;%
+    addTiles() %&gt;%
+    addControlFullScreen()</code></pre>
+<div id="htmlwidget-1993" style="width:528px;height:216px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1993">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addControlFullScreen","args":[]}]},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
