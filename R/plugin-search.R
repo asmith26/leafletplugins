@@ -28,7 +28,7 @@ addSearchOSM <- function(
     map
     , getMapData(map)
     , 'addSearchOSM'
-    , position = position
+    , position
   )
 }
 

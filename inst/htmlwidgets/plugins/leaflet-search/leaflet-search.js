@@ -12,7 +12,8 @@
             markerLocation: false,
             autoType: false,
             autoCollapse: true,
-            minLength: 2
+            minLength: 2,
+            position: position
         });
       search.addTo(this);
       this.search = search;
