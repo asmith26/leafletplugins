@@ -13,6 +13,7 @@ leafletSearchDependencies <- function() {
 #' Add a OSM search control to the map.
 #'
 #' @param map a map widget object
+#' @param url The search url for open street map
 #' @param position standard \href{http://leafletjs.com/reference.html#control-positions}{Leaflet control position options}.
 #' @return modified map
 #' @examples
@@ -22,12 +23,14 @@ leafletSearchDependencies <- function() {
 #' @export
 addSearchOSM <- function(
   map
+  , url = 'http://nominatim.openstreetmap.org/search?format=json&q={s}'
   , position = "topright") {
   map$dependencies <- c(map$dependencies, leafletSearchDependencies())
   invokeMethod(
     map
     , getMapData(map)
     , 'addSearchOSM'
+    , url
     , position
   )
 }

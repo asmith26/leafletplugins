@@ -4,10 +4,14 @@
 \alias{addSearchOSM}
 \title{Add a OSM search control to the map.}
 \usage{
-addSearchOSM(map, position = "topright")
+addSearchOSM(map,
+  url = "http://nominatim.openstreetmap.org/search?format=json&q={s}",
+  position = "topright")
 }
 \arguments{
 \item{map}{a map widget object}
+
+\item{url}{The search url for open street map}
 
 \item{position}{standard \href{http://leafletjs.com/reference.html#control-positions}{Leaflet control position options}.}
 }

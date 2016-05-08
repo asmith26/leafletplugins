@@ -1,10 +1,10 @@
- LeafletWidget.methods.addSearchOSM = function(position) {
+ LeafletWidget.methods.addSearchOSM = function(url, position) {
     if(this.search) {
     this.search.removeFrom( this );
     }
 
       var search = new L.Control.Search({
-            url: 'http://nominatim.openstreetmap.org/search?format=json&q={s}',
+            url: url,
             jsonpParam: 'json_callback',
             propertyName: 'display_name',
             propertyLoc: ['lat','lon'],
