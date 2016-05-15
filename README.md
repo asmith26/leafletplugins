@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/byzheng/leafletplugins.svg?branch=master)](https://travis-ci.org/byzheng/leafletplugins)
+
+
+
 # leafletplugins
 A collections of plugins for R package [leaflet](https://github.com/rstudio/leaflet)
 
