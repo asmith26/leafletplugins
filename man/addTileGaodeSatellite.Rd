@@ -23,8 +23,10 @@ modified map object
 Add a Gaode satellite layer
 }
 \examples{
+\dontrun{
 leaflet() \%>\%
   addTileGaodeSatellite() \%>\%
   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
+}
 }
 

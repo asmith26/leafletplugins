@@ -24,7 +24,7 @@ addControlFullScreen <- function(
   map
 ) {
   map$dependencies <- c(map$dependencies, leafletFullScreenDependencies())
-  invokeMethod(map, getMapData(map), 'addControlFullScreen')
+  invokeMethod(map, leaflet::getMapData(map), 'addControlFullScreen')
 }
 
 

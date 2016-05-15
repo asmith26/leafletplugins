@@ -25,8 +25,9 @@ leafletGaodeDependencies <- function() {
 #'   Human-friendly group names are permitted--they need not be short,
 #'   identifier-style names.
 #' @return modified map object
-#' \dontrun{
+#'
 #' @examples
+#' \dontrun{
 #' leaflet() %>%
 #'   addTileGaodeMap() %>%
 #'   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
@@ -55,8 +56,9 @@ addTileGaodeMap <- function(
 #'   identifier-style names.
 #' @return modified map object
 #'
-#' \dontrun{
+#'
 #' @examples
+#' \dontrun{
 #' leaflet() %>%
 #'   addTileGaodeSatellite() %>%
 #'   setView(lat = 37.550339, lng = 104.114129, zoom = 4)
