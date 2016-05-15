@@ -1,7 +1,8 @@
 language: r
 
 install:
-   - Rscript -e "if (!require('bookdown')) devtools::install_github('rstudio/leaflet')"
+   - Rscript -e "if (!require('devtools')) install.packages('devtools')"
+   - Rscript -e "if (!require('leaflet')) devtools::install_github('rstudio/leaflet')"
 
 cache:
   packages: yes
