@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/byzheng/leafletplugins.svg?branch=master)](https://travis-ci.org/byzheng/leafletplugins)
-
-
+**Note:** a more comprehensive list of leaflet plugins exist [here](https://github.com/bhaskarvk/leaflet.extras).
 
 # leafletplugins
 A collections of plugins for R package [leaflet](https://github.com/rstudio/leaflet)
@@ -16,9 +14,5 @@ You can install the development version from Github:
 
 ```r
 if (!require('devtools')) install.packages('devtools')
-devtools::install_github('byzheng/leafletplugins')
+devtools::install_github('asmith26/leafletplugins')
 ```
-
-# Examples
-
-See examples from here: https://byzheng.github.io/leafletplugins/
